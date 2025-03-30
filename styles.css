@@ -1,0 +1,178 @@
+/* Basic styling for the navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide the checkbox input */
+#menu-toggle {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Hide the navigation links by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+  }
+
+  /* Display the hamburger icon */
+  .menu-icon {
+    display: block;
+  }
+
+  /* When the checkbox is checked, show the menu */
+  #menu-toggle:checked + label + ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Basic styling for contact form */
+.contact-form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.contact-form label, input, textarea {
+  width: 25%
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+/* Make each header a centered flex-box */
+header {
+  display:flex;
+  justify-content: center;
+}
+
+/* Make embedded map a centered flex box */
+.location-map {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer styling, set position fixed at bottom of screen */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Basic styling of food and beverage menu */
+.menu {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu, th, td {
+  border: 1px, solid;
+}
+
+th, td {
+  padding: 5px
+}
+
+th {
+   background-color:rgb(50, 176, 50);
+   color: white;
+}
+
+/* Basic styling for Welcome message on home page */
+.welcome {
+  background-color:rgb(50, 176, 50);
+  color: white;
+  margin: 20px;
+}
+
+/* Make events class into a flexbox and space out events */
+.events {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .events{
+    flex-direction: column;
+  }
+}
+
+/* Basic styling of each event article */
+.event {
+  border: 1px, solid, black;
+  background-color: rgb(50, 176, 50);
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Resize "hero image" on home page to fit screen */
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Basic styling of about us section on home page */
+.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 100px 0px;
+  padding: 10px;
+  background-color: rgb(50, 176, 50);
+  color:white;
+  width: 50%;
+}
+
+/* Make main section on home page to flex box and center item */
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
